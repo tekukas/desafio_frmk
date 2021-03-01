@@ -12,14 +12,15 @@ class TelaInicial extends StatelessWidget {
               "componentes/logoFRWK.png",
               height: 48,
             ),
-            Text('Menu Principal'),
+            Text('Menu Principal',
+              style: TextStyle(fontSize: 24),
+            ),
           ],
         ),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               'Bem vindo ao aplicativo!',
@@ -33,8 +34,8 @@ class TelaInicial extends StatelessWidget {
                 );
               },
               child: Padding(
-                padding: const EdgeInsets.all(40.0),
-                child: Text('Acessar as tabelas', style: TextStyle(fontSize: 40), textAlign: TextAlign.center,),
+                padding: const EdgeInsets.all(32.0),
+                child: Text('Acessar', style: TextStyle(fontSize: 40), textAlign: TextAlign.center,),
               ),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(60)),

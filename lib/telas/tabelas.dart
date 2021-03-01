@@ -10,7 +10,10 @@ class Tabelas extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Tabelas'),
+          title: Text(
+            'Tabelas',
+            style: TextStyle(fontSize: 24),
+          ),
           bottom: TabBar(
             tabs: [
               Tab(text: 'Postagens'),
