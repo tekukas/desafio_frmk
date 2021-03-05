@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 Future<String> pegaDados(String link) async {
@@ -12,6 +13,17 @@ Future<String> pegaDados(String link) async {
   }
 }
 
-Color roxoFrwk(){
-  return Color(0xff6800db);
+Color roxoFrwk(String op){
+  if(op == 'main'){
+    return Color(0xff6800db);
+  }
+  else if (op == 'sec'){
+    return Color(0xffe0d0f2);
+  }
+  else if(op == 'ter') {
+    return Colors.deepPurpleAccent[100];
+  }
+  else{
+    return Colors.black;
+  }
 }

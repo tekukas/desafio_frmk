@@ -13,10 +13,10 @@ class Frwk extends StatelessWidget {
       //theme: ThemeData.dark(),
       theme: ThemeData(
         fontFamily: 'Quicksand',
-        primaryColor: roxoFrwk(),
-        accentColor: Colors.deepPurpleAccent[100],
+        primaryColor: roxoFrwk('main'),
+        accentColor: roxoFrwk('ter'),
         buttonTheme: ButtonThemeData(
-          buttonColor: Colors.deepPurpleAccent[100],
+          buttonColor: roxoFrwk('ter'),
           textTheme: ButtonTextTheme.primary,
         ),
       ),

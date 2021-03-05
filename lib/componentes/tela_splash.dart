@@ -25,7 +25,7 @@ class _TelaSplashState extends State<TelaSplash> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(color: roxoFrwk()),
+        decoration: BoxDecoration(color: roxoFrwk('main')),
         child: Center(
           child: TweenAnimationBuilder(
             curve: Curves.fastOutSlowIn,
@@ -35,11 +35,17 @@ class _TelaSplashState extends State<TelaSplash> {
               return Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Image.asset(
-                    "componentes/logoFRWK.png",
-                    width: MediaQuery.of(context).size.width * size,
-                    fit: BoxFit.fitWidth,
-                  ),
+                  MediaQuery.of(context).orientation == Orientation.portrait
+                      ? Image.asset(
+                          "componentes/logoFRWK.png",
+                          width: MediaQuery.of(context).size.width * size,
+                          fit: BoxFit.fitWidth,
+                        )
+                      : Image.asset(
+                          "componentes/logoFRWK.png",
+                          height: MediaQuery.of(context).size.height * size,
+                          fit: BoxFit.fitHeight,
+                        ),
                 ],
               );
             },

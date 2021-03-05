@@ -1,3 +1,4 @@
+import 'package:desafio_frmk/funcoes.dart';
 import 'package:desafio_frmk/telas/tabelas.dart';
 import 'package:flutter/material.dart';
 
@@ -5,6 +6,7 @@ class TelaInicial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: roxoFrwk('sec'),
       appBar: AppBar(
         title: Row(
           children: [
