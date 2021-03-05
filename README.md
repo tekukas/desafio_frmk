@@ -1,16 +1,11 @@
-# desafio_frmk
+# Desafio Técnico da Framework
 
 Desafio técnico do teste de seleção da Framework.
 
-## Getting Started
+## O Projeto
 
-This project is a starting point for a Flutter application.
+O projeto consiste no desenvolvimento de um menu para acessar 3 telas, com uma tabelaem cada tela listando POSTAGENS, ALBUNS e TO-DOs, com os dados da API publicada em https://jsonplaceholder.typicode.com/. Eu utilizei a tecnologia Flutter, no Aplicativo Android Studio.
 
-A few resources to get you started if this is your first Flutter project:
+## Gravação de tela do aplicativo em funcionamento
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://user-images.githubusercontent.com/72702201/110051376-7d5dc200-7d34-11eb-91ee-4a5d783a93ae.mp4
